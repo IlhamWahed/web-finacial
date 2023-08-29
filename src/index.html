@@ -22,8 +22,8 @@
   </head>
   <body>
     <!--navbar-->
-    <header class="sticky top-0 z-50">
-      <nav class="container relative flex items-center justify-between bg-color-primary">
+    <header class="sticky top-0 z-50 w-full bg-color-primary">
+      <nav class="container relative flex items-center justify-between">
         <!--logo-->
         <a href="#home" class="text-3xl font-bold py-5">
           <h1 class="text-white">One<span class="text-color-secondary">Protech.</span></h1>
@@ -38,7 +38,7 @@
             <li><a href="#blog" class="nav-link hover:text-color-secondary">Blog</a></li>
             <li><a href="#contact" class="nav-link hover:text-color-secondary">Contact</a></li>
             <li>
-              <button class="text-white bg-color-secondary hover:opacity-80 ease-in duration-200 focus:ring-4 focus:ring-white font-bold rounded-lg text-base px-9 py-3 focus:outline-none">Free Trial</button>
+              <button class="btn">Free Trial</button>
             </li>
           </ul>
           <div class="absolute right-4 top-4 text-3xl lg:hidden" id="btn-close">
@@ -52,6 +52,28 @@
       </nav>
     </header>
     <!--navbar end-->
+
+    <main class="overflow-hidden">
+      <!--home-->
+      <section id="home" class="relative">
+        <!--blob-->
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+        <div class="container flex flex-col md:flex-row items-center">
+          <!--title home-->
+          <div class="space-y-8 md:w-1/2 md:pr-10 text-center md:text-left">
+            <h1 class="heading-title md:text-left">Awesome App for Your Financial.</h1>
+            <p class="leading-relaxed md:text-left">This should be used to tell a story and let your users know a little more about app and it's use, How can benefit them.</p>
+            <button class="btn">Download App</button>
+          </div>
+          <!--image home-->
+          <div class="pt-16 md:pt-0 md:w-1/2">
+            <img src="../img/hero4.png" class="" alt="" />
+          </div>
+        </div>
+      </section>
+      <!--home end-->
+    </main>
 
     <!--link js-->
     <script src="main.js"></script>
