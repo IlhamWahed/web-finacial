@@ -10,7 +10,7 @@
     @apply bg-color-primary text-white tracking-wider;
   }
   section {
-    @apply pt-10 pb-4;
+    @apply pt-10 pb-4 md:pt-20;
   }
 }
 
@@ -28,6 +28,6 @@
 
 @layer utilities {
   .heading-title {
-    @apply text-3xl capitalize md:text-4xl  font-bold;
+    @apply text-3xl capitalize md:text-4xl font-bold;
   }
 }
