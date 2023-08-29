@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-color-primary text-white tracking-wider;
+  }
+}
+
+@layer utilities {
+  .heading-title {
+    @apply text-3xl capitalize md:text-4xl lg:text-3xl;
+  }
+}

@@ -17,13 +17,44 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <!--navbar-->
+    <header class="sticky top-0 z-50">
+      <nav class="container relative flex items-center justify-between bg-color-primary">
+        <!--logo-->
+        <a href="#home" class="text-3xl font-bold py-5">
+          <h1 class="text-white">One<span class="text-color-secondary">Protech.</span></h1>
+        </a>
+        <!--ul li-->
+        <div class="hidden lg:block absolute w-full bg-color-primary top-0 left-0 py-14 lg:w-auto lg:py-0 lg:static" id="navbar-ul">
+          <ul class="flex items-center gap-5 flex-col text-center font-medium md:flex-row">
+            <li><a href="#home" class="nav-link text-color-secondary hover:text-color-secondary">Home</a></li>
+            <li><a href="#features" class="nav-link hover:text-color-secondary">Features</a></li>
+            <li><a href="#testimonni" class="nav-link hover:text-color-secondary">Testimonial</a></li>
+            <li><a href="#pricing" class="nav-link hover:text-color-secondary">Pricing</a></li>
+            <li><a href="#blog" class="nav-link hover:text-color-secondary">Blog</a></li>
+            <li><a href="#contact" class="nav-link hover:text-color-secondary">Contact</a></li>
+            <li>
+              <button class="text-white bg-color-secondary hover:opacity-80 ease-in duration-200 focus:ring-4 focus:ring-white font-bold rounded-lg text-base px-9 py-3 focus:outline-none">Free Trial</button>
+            </li>
+          </ul>
+          <div class="absolute right-4 top-4 text-3xl lg:hidden" id="btn-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <!--btn humberger-->
+        <div class="lg:hidden text-2xl" id="humberger-menu">
+          <i class="ri-menu-2-line"></i>
+        </div>
+      </nav>
+    </header>
+    <!--navbar end-->
 
+    <!--link js-->
+    <script src="main.js"></script>
     <!--link flowbite JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </body>
