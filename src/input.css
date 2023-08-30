@@ -16,7 +16,7 @@
 
 @layer components {
   .btn {
-    @apply text-white bg-color-secondary hover:opacity-80 ease-in duration-200 focus:ring-4 focus:ring-white font-bold rounded-lg text-base px-9 py-3 focus:outline-none inline-flex;
+    @apply text-white bg-color-secondary hover:opacity-80 ease-in duration-200 focus:ring-4 focus:ring-white font-bold rounded-lg text-base px-9 py-3 focus:outline-none inline-flex capitalize;
   }
   .blob1 {
     @apply w-80 h-80 bg-color-blob absolute top-0 left-5 rounded-full blur-2xl -z-10 opacity-30 overflow-hidden;
