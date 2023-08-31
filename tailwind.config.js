@@ -18,6 +18,17 @@ module.exports = {
         "color-white": "#fff",
         "color-blob": "#A427DF",
       },
+
+      keyframes: {
+        moveup: {
+          "0%": { marginTop: "40px", opacity: 0 },
+          "50%": { marginTop: "20px", opacity: 0.1 },
+          "100%": { marginTop: "0px", opacity: 1 },
+        },
+      },
+      animation: {
+        movingUp: "moveup 1s linear forwards",
+      },
     },
     container: {
       center: true,
