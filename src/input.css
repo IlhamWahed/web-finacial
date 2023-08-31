@@ -18,6 +18,9 @@
   .btn {
     @apply text-white bg-color-secondary hover:opacity-80 ease-in duration-200 focus:ring-4 focus:ring-white font-bold rounded-lg text-base px-9 py-3 focus:outline-none inline-flex capitalize;
   }
+  .card_btn {
+    @apply w-full px-9 py-3 bg-color-primary-dark hover:bg-color-secondary ease-in duration-200 rounded-md font-bold capitalize;
+  }
   .blob1 {
     @apply w-80 h-80 bg-color-blob absolute top-0 left-5 rounded-full blur-2xl -z-10 opacity-30 overflow-hidden;
   }
@@ -42,4 +45,18 @@
   .heading-title {
     @apply text-3xl capitalize md:text-4xl font-bold;
   }
+}
+
+.card {
+  perspective: 1000px;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.front {
+  overflow: hidden;
 }

@@ -38,3 +38,27 @@ function showReview() {
 }
 
 // testimoni end //
+
+// toggle btn pricing //
+const toggleBtnEl = document.getElementById("toggleBtn");
+
+const card_1_frontEL = document.querySelector("#card_1_front");
+const card_1_backEL = document.querySelector("#card_1_back");
+
+const card_2_frontEL = document.querySelector("#card_2_front");
+const card_2_backEL = document.querySelector("#card_2_back");
+
+const card_3_frontEL = document.querySelector("#card_3_front");
+const card_3_backEL = document.querySelector("#card_3_back");
+
+toggleBtnEl.addEventListener("change", () => {
+  card_1_frontEL.classList.toggle("-rotate-y-180");
+  card_1_backEL.classList.toggle("rotate-y-180");
+
+  card_2_frontEL.classList.toggle("-rotate-y-180");
+  card_2_backEL.classList.toggle("rotate-y-180");
+
+  card_3_frontEL.classList.toggle("-rotate-y-180");
+  card_3_backEL.classList.toggle("rotate-y-180");
+});
+// toggle btn pricing end//
