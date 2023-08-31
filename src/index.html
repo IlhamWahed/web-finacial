@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--navbar-->
-    <header class="sticky top-0 z-50 w-full bg-color-primary">
+    <header class="sticky top-0 z-50 w-full bg-color-primary" id="header">
       <nav class="container relative flex items-center justify-between">
         <!--logo-->
         <a href="#home" class="text-3xl font-bold py-5">
@@ -30,7 +30,7 @@
         </a>
         <!--ul li-->
         <div class="hidden lg:block absolute w-full bg-color-primary top-0 left-0 py-14 lg:w-auto lg:py-0 lg:static" id="navbar-ul">
-          <ul class="flex items-center gap-5 flex-col text-center font-medium md:flex-row">
+          <ul class="flex items-center gap-5 flex-col text-center font-medium md:flex-row w-full">
             <li><a href="#home" class="nav-link text-color-secondary hover:text-color-secondary">Home</a></li>
             <li><a href="#features" class="nav-link hover:text-color-secondary">Features</a></li>
             <li><a href="#testimonni" class="nav-link hover:text-color-secondary">Testimonial</a></li>
@@ -703,6 +703,10 @@
       </section>
       <!--footer end-->
     </main>
+
+    <a href="#" class="fixed inline-block right-4 -bottom-1/2 shadow-sm bg-color-white text-color-primary-dark px-4 py-2 z-50 text-lg hover:-translate-y-1 ease-in duration-200 rounded-full" id="scroll-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <!--link js-->
     <script src="main.js"></script>

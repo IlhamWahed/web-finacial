@@ -62,3 +62,55 @@ toggleBtnEl.addEventListener("change", () => {
   card_3_backEL.classList.toggle("rotate-y-180");
 });
 // toggle btn pricing end//
+
+//-------------- Scroll ----------------//
+scrollUp = () => {
+  const scrollUpBtn = document.getElementById("scroll-up");
+  if (this.scrollY >= 250) {
+    scrollUpBtn.classList.remove("-bottom-1/2");
+    scrollUpBtn.classList.add("bottom-4");
+  } else {
+    scrollUpBtn.classList.add("-bottom-1/2");
+    scrollUpBtn.classList.remove("bottom-4");
+  }
+};
+window.addEventListener("scroll", scrollUp);
+//-------------- Scroll End----------------//
+
+//-------------- Scroll Section Active ----------------//
+const activeLink = () => {
+  const sectionEl = document.querySelectorAll("section");
+  const navLinkEL = document.querySelectorAll(".nav-link");
+
+  let current = "home";
+
+  sectionEl.forEach((sections) => {
+    const sectionTop = sections.offsetTop;
+
+    if (this.scrollY >= sectionTop - 60) {
+      current = sections.getAttribute("id");
+    }
+  });
+
+  navLinkEL.forEach((item) => {
+    item.classList.remove("text-color-secondary");
+    if (item.href.includes(current)) {
+      item.classList.add("text-color-secondary");
+    }
+  });
+};
+
+window.addEventListener("scroll", activeLink);
+//-------------- Scroll Section Active End----------------//
+
+//-------------- Change BG Header----------------//
+const scrollHeader = () => {
+  const headerEl = document.getElementById("header");
+  if (this.scrollY >= 50) {
+    headerEl.classList.add("border-b", "border-color-secondary");
+  } else {
+    headerEl.classList.remove("border-b", "border-color-secondary");
+  }
+};
+window.addEventListener("scroll", scrollHeader);
+//-------------- Change BG Header End----------------//
